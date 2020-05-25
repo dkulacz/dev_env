@@ -19,8 +19,18 @@ sudo apt install vim vim-gtk
 
 sudo apt install git git-gui git-review gitk
 
+# TODO: python stuff
+sudo apt install python3-pip
+sudo pip3 install bincopy
+
 # update git-review to version working properly with gerrit
 sudo pip3 install git-review==1.28
+
+# commit-check.py dependencies
+sudo pip3 install setuptools docopt black mypy==0.720 guardonce cmake-format[YAML]
+
+# shellcheck
+sudo apt install shellcheck
  
 #sudo apt install docker docker.ce docker.io
 #sudo apt install exiv2 exiftool
@@ -29,18 +39,11 @@ sudo pip3 install git-review==1.28
 #sudo apt install virtualbox virtualbox-guest-additons-iso
 #sudo apt install rdesktop grdesktop
 
-# TODO: python stuff
-sudo apt install python3-pip
-sudo pip3 install bincopy
-
 # gcc g++ gdb
 sudo apt install gcc g++ gdb
 
 # TODO: clang clang-tidy
 sudo apt install clang-format-6
-
-# TODO: from third party ppa
-# sudo apt install shellcheck black mypy
 
 # zsh
 sudo apt install zsh
