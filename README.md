@@ -1,2 +1,2 @@
 # dev_env
-Script to set up dev environment
+Script for setting up dev environment
