@@ -66,6 +66,18 @@ sudo apt install cmake
 # ninja build system
 sudo apt install ninja-build
 
+# docker
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo systemctl restart docker
+
 # TODO: pycharm
 # wget https://download-cf.jetbrains.com/python/pycharm-community-2020.1.1.tar.gz
 # unpack to /opt/pycharm
