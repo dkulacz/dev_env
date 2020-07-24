@@ -43,7 +43,7 @@ sudo apt install shellcheck
 sudo apt install gcc g++ gdb
 
 # TODO: clang clang-tidy
-sudo apt install clang-format-6
+sudo apt install clang-format-6.0
 
 # zsh
 sudo apt install zsh
