@@ -17,33 +17,40 @@ sudo apt-get -y install vim vim-gtk
 # sudo dpkg -i teams_1.3.00.5153_amd64.deb
 # or via snap: sudo apt-get -y install snapd & sudo snap install teams-for-linux
 
-sudo apt-get -y install git git-gui git-review gitk
+# git stuff
+sudo apt-get -y install git git-gui gitk
 
-# TODO: python stuff
-sudo apt-get -y install python3-pip python3-setuptools
-sudo pip3 install bincopy
-
-# update git-review to version working properly with gerrit
+# install git-review in version working properly with gerrit
 sudo pip3 install git-review==1.28
 
-# commit-check.py dependencies
-sudo pip3 install setuptools docopt black mypy==0.720 guardonce cmake-format[YAML]
+# python basic stuff
+sudo apt-get -y install python3-pip python3-setuptools
 
-# install selected version of clang-format
+# commit-check.py dependencies
+sudo pip3 install docopt black mypy==0.720 guardonce cmake-format[YAML]
+
+# TODO: cmake-format[YAML] in version working with commit-check.py in CI
+
+# install proper version of clang-format
 sudo pip3 install clang-format==6.0.1
+
+# install some aux python libs
+sudo pip3 install bincopy
 
 # shellcheck
 sudo apt-get -y install shellcheck
  
-#sudo apt-get -y install docker docker.ce docker.io
 #sudo apt-get -y install exiv2 exiftool
-#sudo apt-get -y install dosbox qemu-kvm
+#sudo apt-get -y install qemu-kvm
 #sudo apt-get -y install wine64-5.0.0 winetricks ttf-mscorefonts-installer
-#sudo apt-get -y install virtualbox virtualbox-guest-additons-iso
 #sudo apt-get -y install rdesktop grdesktop
 
 # gcc g++ gdb
 sudo apt-get -y install gcc g++ gdb
+
+# TODO: v850-elf-toolchain
+
+# TODO: clang compiler
 
 # zsh
 sudo apt-get -y install zsh
