@@ -29,6 +29,9 @@ sudo pip3 install git-review==1.28
 # commit-check.py dependencies
 sudo pip3 install setuptools docopt black mypy==0.720 guardonce cmake-format[YAML]
 
+# install selected version of clang-format
+sudo pip3 install clang-format==6.0.1
+
 # shellcheck
 sudo apt install shellcheck
  
@@ -41,9 +44,6 @@ sudo apt install shellcheck
 
 # gcc g++ gdb
 sudo apt install gcc g++ gdb
-
-# TODO: clang clang-tidy
-sudo apt install clang-format-6.0
 
 # zsh
 sudo apt install zsh
