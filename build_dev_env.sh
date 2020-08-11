@@ -2,25 +2,25 @@
 
 set -e
 
-sudo apt update
+sudo apt-get update
 
-sudo apt install i3 i3status i3lock-fancy dmenu
-sudo apt install krusader krename meld kate okular
-sudo apt install mc htop iotop nmon tmux picocom
-sudo apt install nmap net-tools openssh-server openssh-sftp-server
-sudo apt install galculator p7zip p7zip-full unrar dos2unix
-sudo apt install exfat-fuse smartmontools
-sudo apt install vim vim-gtk
+sudo apt-get -y install i3 i3status i3lock-fancy dmenu
+sudo apt-get -y install krusader krename meld kate okular
+sudo apt-get -y install mc htop iotop nmon tmux picocom
+sudo apt-get -y install nmap net-tools openssh-server openssh-sftp-server
+sudo apt-get -y install galculator p7zip p7zip-full unrar dos2unix
+sudo apt-get -y install exfat-fuse smartmontools
+sudo apt-get -y install vim vim-gtk
 
 # TODO: ms teams
 # wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb
 # sudo dpkg -i teams_1.3.00.5153_amd64.deb
-# or via snap: sudo apt install snapd & sudo snap install teams-for-linux
+# or via snap: sudo apt-get -y install snapd & sudo snap install teams-for-linux
 
-sudo apt install git git-gui git-review gitk
+sudo apt-get -y install git git-gui git-review gitk
 
 # TODO: python stuff
-sudo apt install python3-pip python3-setuptools
+sudo apt-get -y install python3-pip python3-setuptools
 sudo pip3 install bincopy
 
 # update git-review to version working properly with gerrit
@@ -33,20 +33,20 @@ sudo pip3 install setuptools docopt black mypy==0.720 guardonce cmake-format[YAM
 sudo pip3 install clang-format==6.0.1
 
 # shellcheck
-sudo apt install shellcheck
+sudo apt-get -y install shellcheck
  
-#sudo apt install docker docker.ce docker.io
-#sudo apt install exiv2 exiftool
-#sudo apt install dosbox qemu-kvm
-#sudo apt install wine64-5.0.0 winetricks ttf-mscorefonts-installer
-#sudo apt install virtualbox virtualbox-guest-additons-iso
-#sudo apt install rdesktop grdesktop
+#sudo apt-get -y install docker docker.ce docker.io
+#sudo apt-get -y install exiv2 exiftool
+#sudo apt-get -y install dosbox qemu-kvm
+#sudo apt-get -y install wine64-5.0.0 winetricks ttf-mscorefonts-installer
+#sudo apt-get -y install virtualbox virtualbox-guest-additons-iso
+#sudo apt-get -y install rdesktop grdesktop
 
 # gcc g++ gdb
-sudo apt install gcc g++ gdb
+sudo apt-get -y install gcc g++ gdb
 
 # zsh
-sudo apt install zsh
+sudo apt-get -y install zsh
 git clone https://github.com/robbyrussell/oh-my-zsh
 mv oh-my-zsh ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc-zsh-template ~/.zshrc
@@ -56,15 +56,15 @@ sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/bin/rep
 sudo chmod 755 /usr/bin/repo
 
 # latest cmake
-sudo apt update
-sudo apt install apt-transport-https ca-certificates gnupg software-properties-common wget
+sudo apt-get update
+sudo apt-get -y install apt-transport-https ca-certificates gnupg software-properties-common wget
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
 sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
-sudo apt update
-sudo apt install cmake
+sudo apt-get update
+sudo apt-get -y install cmake
 
 # ninja build system
-sudo apt install ninja-build
+sudo apt-get -y install ninja-build
 
 # docker
 sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -72,7 +72,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb https://download.docker.com/linux/ubuntu $(. /etc/os-release; echo "$UBUNTU_CODENAME") stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo groupadd -f docker
 sudo usermod -aG docker $USER
 newgrp docker
