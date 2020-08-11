@@ -48,7 +48,7 @@ sudo apt install clang-format-6.0
 # zsh
 sudo apt install zsh
 git clone https://github.com/robbyrussell/oh-my-zsh
-mv -R oh-my-zsh ~/.oh-my-zsh
+mv oh-my-zsh ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc-zsh-template ~/.zshrc
 
 # repo tool
