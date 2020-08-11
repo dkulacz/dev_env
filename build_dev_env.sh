@@ -20,7 +20,7 @@ sudo apt install vim vim-gtk
 sudo apt install git git-gui git-review gitk
 
 # TODO: python stuff
-sudo apt install python3-pip
+sudo apt install python3-pip python3-setuptools
 sudo pip3 install bincopy
 
 # update git-review to version working properly with gerrit
