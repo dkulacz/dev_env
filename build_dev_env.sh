@@ -2,7 +2,7 @@
 
 set -e
 
-sudo apt-get update
+sudo apt-get -y update
 
 sudo apt-get -y install i3 i3status i3lock-fancy dmenu
 sudo apt-get -y install krusader krename meld kate okular
