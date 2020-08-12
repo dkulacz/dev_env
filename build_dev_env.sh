@@ -27,7 +27,7 @@ sudo pip3 install git-review==1.28
 sudo apt-get -y install python3-pip python3-setuptools
 
 # commit-check.py dependencies
-sudo pip3 install docopt black mypy==0.720 guardonce cmake-format[YAML]
+sudo pip3 install docopt black mypy==0.720 guardonce cmake-format[YAML] flake8
 
 # TODO: cmake-format[YAML] in version working with commit-check.py in CI
 
