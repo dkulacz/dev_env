@@ -33,6 +33,7 @@ sudo pip3 install docopt black mypy==0.720 guardonce cmake-format[YAML] flake8
 
 # install proper version of clang-format
 sudo pip3 install clang-format==6.0.1
+sudo ln -s /usr/local/bin/clang-format /usr/local/bin/clang-format-6.0
 
 # install some aux python libs
 sudo pip3 install bincopy
