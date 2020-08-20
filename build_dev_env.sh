@@ -20,11 +20,11 @@ sudo apt-get -y install vim vim-gtk
 # git stuff
 sudo apt-get -y install git git-gui gitk
 
-# install git-review in version working properly with gerrit
-sudo pip3 install git-review==1.28
-
 # python basic stuff
 sudo apt-get -y install python3-pip python3-setuptools
+
+# install git-review in version working properly with gerrit
+sudo pip3 install git-review==1.28
 
 # commit-check.py dependencies
 sudo pip3 install docopt black mypy==0.720 guardonce cmake-format[YAML] flake8
