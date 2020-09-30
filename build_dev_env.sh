@@ -86,6 +86,11 @@ sudo usermod -aG docker $USER
 newgrp docker
 sudo systemctl restart docker
 
+# boost
+sudo add-apt-repository "ppa:mhier/libboost-latest"
+sudo apt update
+sudo apt install libboost1.70-dev
+
 # TODO: pycharm
 # wget https://download-cf.jetbrains.com/python/pycharm-community-2020.1.1.tar.gz
 # unpack to /opt/pycharm
