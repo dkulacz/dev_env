@@ -57,7 +57,7 @@ sudo apt-get -y install gcc g++ gdb
 sudo apt-get -y install zsh
 git clone https://github.com/robbyrussell/oh-my-zsh
 mv oh-my-zsh ~/.oh-my-zsh
-cp ~/.oh-my-zsh/templates/zshrc-zsh-template ~/.zshrc
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 # repo tool
 sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/bin/repo
