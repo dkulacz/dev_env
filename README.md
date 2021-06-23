@@ -1,2 +1,2 @@
 # dev_env
-Script for setting up dev environment on Mint 19.3
+Scripts for setting up development environment on Mint 19 / Ubuntu 20.04 LTS
